@@ -2,7 +2,7 @@
 <img src = "https://github.com/evanmcook/fellllllllPrototype/blob/main/both.png" width = "50%">
 
 
-monome norns cat drummer - original art by ko-fi.com/arogue
+monome norns cat drummer - original art by https://ko-fi.com/arogue
 
 ensure that the folder 'fellllllll' resides in /dust/code/ of your norns.
 
