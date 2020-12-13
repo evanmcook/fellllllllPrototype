@@ -1,11 +1,11 @@
---  
---   ////\\\\
---   ////\\\\  evancook.audio
---   ////\\\\  presents
---   \\\\////
---   \\\\////  fellllllll
---   \\\\////
---
+--   ^__^
+--  ( o.o ) fellllllll v1.0
+--    =^=  
+--          by evancook.audio
+--          k2 for left paw, 
+--          k3 for right paw
+--  original art by
+--  ko-fi.com/arogue
 
 local viewport = { width = 128, height = 64 }
 local focus = { x = 0, y = 0 }
