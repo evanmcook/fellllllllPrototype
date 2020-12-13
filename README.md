@@ -6,7 +6,7 @@ ensure that the folder 'fellllllll' resides in /dust/code/ of your norns.
 k2 for left hand, k3 for left hand. no audio output (yet) as of dec 12 2020
 
 TODO: 
-fix image cropping,
-both hands feature,
 audio,
 title screen art
+
+<img src = "\both.png" width = "50%">
