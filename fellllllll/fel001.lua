@@ -17,65 +17,75 @@ function init()
   screen.level(15)
   screen.aa(0)
   screen.line_width(1)
-  mode = 0 
-  -- Center focus
-  reset()
+
+  two = false
+  three = false
+
   -- Render
   redraw()
 
-end
-
-function reset()
-  print('reset')
-  focus.x = viewport.width/2
-  focus.y = viewport.height/2
 end
 
 -- Interactions
 
 function key(id,state)
   print('key',id,state)
+  
+  --if key3 is pressed, set the boolean flag for 3 to true
   if (id == 3) and (state==1) then
-   mode = 1
-   print('mode',mode, state)
+   three = true
    redraw()
+   
+  --elseif key2 is pressed, set the boolean flag for 2 to true
   elseif (id==2) and (state==1) then
-  mode = 2
-   print('mode',mode, state)
+  --mode = 2
+   two = true
    redraw()
+  
+  --elseif key2 and key 3 are pressed
+  --set the boolean flag for 2 to true and...
+  --set the boolean flag for 3 to true 
+  elseif ((id==2) and (state==1)) and ((id == 3) and (state==1)) then 
+    two = true
+    three = true
+    redraw()
+  --else set boolean flags for keys to false.
   else
-    mode = 0
-    print('mode',mode, state)
-  redraw()
+    two = false
+    three = false
+    redraw()
   end
 end
 
 -- Render
 
-function draw_frame()
-  screen.rect(1, 1, viewport.width-1, viewport.height-1)
-  screen.stroke()
-end
-
-function drawCirc()
-  screen.circle(viewport.width/2, viewport.height/2,4)
-  screen.stroke()
-end
 
 function redraw()
   screen.clear()
-  if mode == 1 then
+  
+  --if both key 2 and key 3 are pressed, display the image with both paws down
+  --also print that both keys are pressed
+  if two and three then
+    screen.display_png("/home/we/dust/code/fellllllll/catBoth.png", 0, 0)
+    print('both on')
+    
+  --elseif key 3 is pressed, display the image with the right paw down
+  elseif three and not two then
+  --if mode == 1 then
     screen.display_png("/home/we/dust/code/fellllllll/catRight.png", 0, 0)
-  elseif mode == 0 then
+    
+  --else if no key is pressed, display the image with the both paws up
+  
+  elseif not two and not three then
     screen.clear()
     screen.display_png("/home/we/dust/code/fellllllll/catUp.png", 0, 0)
-  elseif mode == 2 then
-    screen.display_png("/home/we/dust/code/fellllllll/catLeft.png", 0, 0)
     
+  elseif two then
+  --else if key 2 is pressed, display the image with the left paw down
+    screen.display_png("/home/we/dust/code/fellllllll/catLeft.png", 0, 0)
+  
   end
-  --draw_crosshair()
   screen.update()
- 
 end
 
 -- Utils
