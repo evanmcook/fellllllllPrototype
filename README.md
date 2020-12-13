@@ -1,4 +1,7 @@
 # fellllllll
+<img src = "https://github.com/evanmcook/fellllllllPrototype/blob/main/both.png" width = "50%">
+
+
 monome norns cat drummer
 
 ensure that the folder 'fellllllll' resides in /dust/code/ of your norns.
@@ -9,4 +12,4 @@ TODO:
 audio,
 title screen art
 
-<img src = "https://github.com/evanmcook/fellllllllPrototype/blob/main/both.png" width = "50%">
+
