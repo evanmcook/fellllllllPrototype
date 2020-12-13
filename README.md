@@ -9,4 +9,4 @@ TODO:
 audio,
 title screen art
 
-<img src = "\both.png" width = "50%">
+<img src = "\both.PNG" width = "50%">
