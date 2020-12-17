@@ -1,5 +1,5 @@
 --   ^__^
---  ( o.o ) fellllllll v1.0
+--  ( o.o ) fellllllll v1.1
 --    =^=  
 --          by evancook.audio
 --          k2 for left paw, 
@@ -21,8 +21,8 @@ function init()
   two = false
   three = false
   
-  
-  --softcut.buffer_read_mono("/home/we/dust/audio/common/808/808-BD.wav", 0, 0, -1, 1, 2)
+  --change softcut's rate from 0 to 1 to ensure playback
+  softcut.rate(1, 1)
 
   -- Render
   redraw()
@@ -97,7 +97,7 @@ end
 function rightDrum()
   
 --read the file-to-be-played into softcut's buffer
-softcut.buffer_read_mono("/home/we/dust/audio/common/808/808-SD.wav", 0, 0, -1, 1, 1)
+softcut.buffer_read_mono("/home/we/dust/audio/common/808/808-CP.wav", 0, 0, -1, 1, 1)
 --set voice enable of voice 1 to 'on'
 softcut.enable(1,1)
 --set voice 1's buffer to buffer 1
@@ -134,7 +134,7 @@ softcut.loop(1,1)
 softcut.loop_start(1,1)
 --set the loop end point of voice 1 to 2 sec
 softcut.loop_end(1,2)
---set the location of the playhead for voice 1 to 0sec
+--set the location of the playhead for voice 1 to 3sec
 softcut.position(1,3)
 --turn the play status of voice 1 on
 softcut.play(1,1)
