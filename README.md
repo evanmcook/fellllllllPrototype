@@ -6,6 +6,6 @@
 
 ensure that the folder 'fellllllll' resides in /dust/code/ of your norns.
 
-k2 for left paw, k3 for right paw. no audio output (yet) as of dec 12 2020
+k2 for left paw, k3 for right paw. ~~no audio output (yet) as of dec 12 2020~~
 
 
