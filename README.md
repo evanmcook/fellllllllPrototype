@@ -4,6 +4,8 @@
 
 <i>monome norns cat drummer</i> - original art by https://ko-fi.com/arogue
 
+[see demo here](https://youtu.be/UlGWmTc3h7o)
+
 ensure that the folder 'fellllllll' resides in /dust/code/ of your norns.
 
 k2 for left paw, k3 for right paw. ~~no audio output (yet) as of dec 12 2020~~
